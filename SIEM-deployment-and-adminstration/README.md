@@ -25,26 +25,27 @@ To demonstrate the deployment, configuration, validation, administration, and tr
 
 ## Phase 1 : Deployment of the system
 ### Wazuh Server 
-
+````
 Hostname: wazuh-soc
 IP:       192.168.213.104
 OS:       Ubuntu Server 24.04
 RAM:      8 GB
 CPU:      4
 Disk:     ~58 GB usable root filesystem
-
+````
 ### Components
-
+````
 Wazuh Manager
 Wazuh Indexer
 Wazuh Dashboard
-
+````
 ### Windows endpoint
+````
 Hostname: WindowsSOC
 IP:       192.168.213.102
 OS:       Windows 10
 Agent:    Wazuh Agent 4.14.7
-
+````
 ### Kali 
 Purpose: Attack simulation / adversary emulation
 
