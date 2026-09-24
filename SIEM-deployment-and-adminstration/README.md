@@ -53,16 +53,15 @@ Purpose: Attack simulation / adversary emulation
 - Check hostname
 - Check IP
 - Check disk, RAM, CPU
-````
+
 <img width="473" height="147" alt="image" src="https://github.com/user-attachments/assets/20028a25-a220-406d-9d84-85dd9ad36025" />
 
-````
 - Validate the state of 3 core SIEM components : wazuh-manager, wazuh-indexer, wazuh-dashboard
 - Validate the agent
-````
+
 <img width="449" height="123" alt="image" src="https://github.com/user-attachments/assets/a579b3f5-9e10-455f-88cf-48d332c146df" />
-````
+
 - Validate the dashboard
-````
+
 <img width="947" height="503" alt="image" src="https://github.com/user-attachments/assets/0963de1b-4b48-449a-8bf6-fdbb9225d8b4" />
-````
+
