@@ -97,9 +97,9 @@ sudo systemctl is-active wazuh-indexer
 sudo systemctl is-active wazuh-dashboard
 ````
 and all successfully returned active status
-## 2. Agent Administration
-## 3. SIEM Health & Capacity Monitoring
-## 4. Configuration Backup & Recovery
-## 5. Administration Troubleshooting Case
+## Phase 2 : Agent Administration
+## Phase 3 : SIEM Health & Capacity Monitoring
+## Phase 4 : Configuration Backup & Recovery
+## Phase 5 : Administration Troubleshooting Case
 
 
