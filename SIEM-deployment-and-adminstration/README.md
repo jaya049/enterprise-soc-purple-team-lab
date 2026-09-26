@@ -1,4 +1,4 @@
-# SIEM Deployment & Adminstration
+# SIEM Deployment 
 
 ## Objective
 To demonstrate the deployment, configuration, validation, administration, and troubleshooting of a SIEM platform.
@@ -65,4 +65,41 @@ Purpose: Attack simulation / adversary emulation
 - Validate the dashboard
 
 <img width="947" height="503" alt="image" src="https://github.com/user-attachments/assets/0963de1b-4b48-449a-8bf6-fdbb9225d8b4" />
+
+# SIEM Administration
+## Phase 1 : Service Management
+#### Step 1: Service Configuration
+Confirms that all three core Wazuh services are configured for automatic startup and currently operational.
+````
+| Wazuh component | Boot enabled | Current state |
+| --------------- | ------------ | ------------- |
+| Wazuh Manager   | `enabled`    | `active`      |
+| Wazuh Indexer   | `enabled`    | `active`      |
+| Wazuh Dashboard | `enabled`    | `active`      |
+````
+#### Step 2: Controlled service restart
+Restart test was successful
+
+<img width="598" height="322" alt="image" src="https://github.com/user-attachments/assets/f1f5d281-ee66-4013-939d-09391adf9d72" />
+
+#### Step 3: Verify the endpoint after the restart
+To confirm that WindowsSOC (Agent 003) is still connected after the Manager restart.
+
+output: ````ID: 003, Name: WindowsSOC, IP: any, Active````
+
+#### Step 4: Check service logs
+<img width="699" height="431" alt="image" src="https://github.com/user-attachments/assets/446723cb-a593-48e8-baa6-339e645b1ddb" />
+
+#### Step 5: Check all three services after the restart
+````
+sudo systemctl is-active wazuh-manager
+sudo systemctl is-active wazuh-indexer
+sudo systemctl is-active wazuh-dashboard
+````
+and all successfully returned active status
+## 2. Agent Administration
+## 3. SIEM Health & Capacity Monitoring
+## 4. Configuration Backup & Recovery
+## 5. Administration Troubleshooting Case
+
 
