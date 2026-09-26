@@ -2,7 +2,7 @@ SOC LAB STARTUP
 ────────────────────────────
 
 [1] Start Wazuh-SOC
-[2] Check Wazuh IP → 192.168.213.104
+[2] Check Wazuh IP → ip addr
 
 [3] Check:
     sudo systemctl is-active wazuh-indexer
@@ -17,7 +17,7 @@ SOC LAB STARTUP
     Test-NetConnection 192.168.213.104 -Port 1514
 
 [7] On Wazuh:
-    sudo /var/ossec/bin/agent_control -l
+    sudo /var/ossec/bin/agent_control -l >> List of available agents
 
 [8] Confirm:
     WindowsSOC → Active
