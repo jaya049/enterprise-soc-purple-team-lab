@@ -1,28 +1,28 @@
 SOC LAB STARTUP
 ────────────────────────────
 
-[ ] Start Wazuh-SOC
-[ ] Check Wazuh IP → 192.168.213.104
+[1] Start Wazuh-SOC
+[2] Check Wazuh IP → 192.168.213.104
 
-[ ] Check:
+[3] Check:
     sudo systemctl is-active wazuh-indexer
     sudo systemctl is-active wazuh-manager
     sudo systemctl is-active wazuh-dashboard
 
-[ ] Start WindowsSOC
-[ ] Check:
+[4] Start WindowsSOC
+[5] Check:
     Get-Service WazuhSvc
 
-[ ] Test Windows → Wazuh:
+[6] Test Windows → Wazuh:
     Test-NetConnection 192.168.213.104 -Port 1514
 
-[ ] On Wazuh:
+[7] On Wazuh:
     sudo /var/ossec/bin/agent_control -l
 
-[ ] Confirm:
+[8] Confirm:
     WindowsSOC → Active
 
-[ ] Open:
+[9] Open:
     https://192.168.213.104
 
-[ ] Start Kali when needed
+[10] Start Kali when needed
